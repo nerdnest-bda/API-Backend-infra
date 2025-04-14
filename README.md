@@ -17,14 +17,14 @@ This project uses Terraform to deploy a Dockerized Python API (Flask + Gunicorn)
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone git@github.com:nerdnest-bda/API-Backend-infra.git
    cd nerd-nest-infra
    ```
 
 2. **Update your Docker image**
    Edit `terraform.tfvars` and set the full image URI:
    ```hcl
-   container_image = "your-docker-repo/nerd-nest-api:latest"
+   container_image = "your-ECR-repo/nerd-nest-api:latest"
    db_connection = "your-mongo-connection-string"
    ```
 
